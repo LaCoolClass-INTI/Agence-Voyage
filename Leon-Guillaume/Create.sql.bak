@@ -12,8 +12,6 @@ Create table ACTIVITE (nomStation varchar(20),
 						libelle varchar(20), 
 						prix int Default 0, 
 						PRIMARY KEY (nomStation, libelle), 
-						FOREIGN KEY (nomStation) REFERENCES Station
-                        ON DELETE CASCADE
 						);
 
 Create table CLIENT (ID int, 
@@ -31,6 +29,4 @@ Create table SEJOUR (ID int,
 						nbPlaces int not null, 
 						PRIMARY KEY (ID, station, debut), 
 						FOREIGN KEY (ID) REFERENCES CLIENT, 
-						FOREIGN KEY (station) REFERENCES Station
-                        ON DELETE CASCADE
 						);
