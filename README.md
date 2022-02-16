@@ -3,6 +3,8 @@
 
 $ git clone https://github.com/LaCoolClass-INTI/Agence-Voyage
 
+$ git cd Agence-Voyage
+
 $ git branch <nombranch>
   
 $ git checkout <nombranch>
