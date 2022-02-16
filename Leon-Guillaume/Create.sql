@@ -1,3 +1,5 @@
+-- Ajout des tableau Station, Activite, Client, Sejour.
+
 Create table STATION (nomStation varchar(20), 
 						capacite int not null, 
 						lieu varchar(20) not null, 
@@ -15,6 +17,7 @@ Create table ACTIVITE (nomStation varchar(20),
 						FOREIGN KEY (nomStation) REFERENCES Station
                         ON DELETE CASCADE
 						);
+-- ON DELETE CASCADE Permet de supprimer l'activité si le nom de la station est surprimé. 
 
 Create table CLIENT (ID int, 
 						nom varchar(20) not null, 
