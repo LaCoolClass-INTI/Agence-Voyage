@@ -1,14 +1,14 @@
 -- Création des tables 
 
-CREATE TABLE Station (nomStation VARCHAR (200) NOT NULL,
-                      capacite   INT NOT NULL,
+CREATE TABLE Station (nomStation VARCHAR (200) NOT NULL,    --création de la colonne nomStation==> commande VARCHAR ==> permet de mettre des mots (ici à hauteur de 200 caractères)
+                      capacite   INT NOT NULL,                --création de capacite ==> commande INT ==> permet de mettre des chiffres entiers ==> NOT NULL (obligation de mettre une condition)
                       lieu       VARCHAR(200) NOT NULL,
                       region     VARCHAR (200) NOT NULL,
-                      tarif      FLOAT DEFAULT 0 NOT NULL,
-                      CONSTRAINT cle_station PRIMARY KEY (nomStation), 
-                      CONSTRAINT cle_lieu_region UNIQUE (lieu, region),
+                      tarif      FLOAT DEFAULT 0 NOT NULL,    --commande FLOAT ==> permet de mettre des chiffres avec des décimales ==> NOT NULL (obligation de mettre une condition)
+                      CONSTRAINT cle_station PRIMARY KEY (nomStation),   ---fixe la table Station sur le nomStation
+                      CONSTRAINT cle_lieu_region UNIQUE (lieu, region),    ---Empêche qu'il y est un même lieu dans la même région
                       CONSTRAINT nom_region
-                         CHECK (region IN ('Ocean Indien', 
+                         CHECK (region IN ('Ocean Indien',                 ---permet de définir les régions autorisés
                                         'Antilles', 'Europe',
                                         'Ameriques', 'Extreme Orient'))
                     );
@@ -18,7 +18,7 @@ CREATE TABLE Activite (nomStation   VARCHAR (200) NOT NULL,
                        prix         FLOAT DEFAULT 0 NOT NULL,
                        PRIMARY KEY (nomStation, libelle),
                        FOREIGN KEY (nomStation) REFERENCES Station
-                         ON DELETE CASCADE
+                         ON DELETE CASCADE                         ----destruction d'une valeur affiliée entraîne la destruction de cette valeur dans les autres tables associées
                        );
 					   
 CREATE TABLE Client (id INT NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE Sejour  (id INT NOT NULL,
 							 
 -- Insertion des données
 
-INSERT INTO Station (nomStation, capacite, lieu, region, tarif)
+INSERT INTO Station (nomStation, capacite, lieu, region, tarif)     ---insérer des données dans la table
 VALUES ('Venusa' , 350 , 'Guadeloupe' , 'Antilles' ,1200
 );
 
@@ -72,7 +72,7 @@ REPLACE VIEW ActivitesModiques AS
 SELECT nomStation, prix
 FROM Activite
 WHERE prix < 140 
-WITH CHECK OPTION;
+WITH CHECK OPTION;            ---- Toute ligne insérée dans cette vue doit apparaître dans la vue ensuite.
 
 ---Une vue ActivitesCheres, de même schéma, avec prix supérieur à 140 FF, et la même contrainte d'insertion
 
