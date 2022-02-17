@@ -19,3 +19,13 @@ SELECT * FROM ACTIVITE;
 SELECT * FROM CLIENT;
 
 SELECT * FROM SEJOUR;
+
+
+
+-- Insert Kayak fin de TP
+INSERT INTO ACTIVITE (idStation, libelle, prix) VALUES((SELECT STATION.id FROM STATION WHERE STATION.nomStation = 'Venusa'), 'Kayak pour bourges', 180);
+INSERT INTO ACTIVITE (idStation, libelle, prix) VALUES((SELECT STATION.id FROM STATION WHERE STATION.nomStation = 'Venusa'), 'Kayak pour prolos', 110);
+
+-- INSERT DANS LA VIEW STATION EURO
+INSERT INTO STATION VALUES ('Carcazoo', 10, 'Carcassonne', 'Europe', 100);
+DELETE FROM STATION WHERE STATION.nomStation = 'Carcazoo';
