@@ -1,4 +1,8 @@
-# Agence-Voyage
+# La Cool Class - INTI 
+
+[![N|Solid](https://github.com/LaCoolClass-INTI/Scripts-formation/blob/cbc48707beea62aff3722cd341fa546d30a04100/Images-readme/LOGO%20CLCL.png)](https://sites.google.com/view/lacoolclass/accueil)
+
+## Agence-Voyage
 
 Bonjour chère lectrice, cher lecteur, 
 
@@ -15,14 +19,14 @@ Fort de ces données, nous nous attaquons à la visualisation de ces données. P
 
 Bonne lecture de nos scripts :
 
-# Logiciels :
+## Logiciels :
 
 SQL serveur  
 Git
 Cmder
 
 
-# Scripts pour acceder au dépot en local :
+## Scripts pour acceder au dépot en local :
 
 $ git clone https://github.com/LaCoolClass-INTI/Agence-Voyage
 
@@ -34,7 +38,7 @@ $ git checkout 'nombranch'
   
 
 
- # pour voir les autres branch
+## pour voir les autres branch
   
 $ git fetch   
   
