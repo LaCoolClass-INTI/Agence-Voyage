@@ -25,6 +25,8 @@ Bonne lecture de nos scripts.
 
 SQL serveur
 
+SSMS
+
 Git
 
 Cmder
