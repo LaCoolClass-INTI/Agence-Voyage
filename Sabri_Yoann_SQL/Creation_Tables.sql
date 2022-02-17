@@ -1,7 +1,5 @@
 --création de la database
 
---create database ag_voyage; --ne fonctionne pas
-
 -- création des tables station, activité, client et sejour
 
 Create table STATION(
@@ -29,7 +27,6 @@ Create table CLIENT (
 	ville varchar(25) not null,
 	region varchar(25),
 	solde float not null default 0,
-	
 	check(region in ('Ocean Indien', 'Antilles', 'Europe', 'Ameriques', 'Extreme Orient')));
 
 Create table SEJOUR (
