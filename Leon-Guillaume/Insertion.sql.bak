@@ -1,20 +1,17 @@
---Insert des stations :  
+--Après la création des tableaux, on ajoute les différentes informations nécessaire. 
+
+--Insert des stations :   
 
 INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
 Values ('Venusa', 350, 'Guadeloupe', 'Antilles', 1200);
 
---Mise de 1 et 2 après Guadeloupe pour eviter des problemes.
+--Mise de 1 et 2 après Guadeloupe pour eviter des problemes de stations dans le meme lieu. 
 
 INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
 Values ('Sainte-Rose', 400, 'Guadeloupe1', 'Antilles', 1350);
 
 INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
 Values ('Pointe-à-Pitre', 300, 'Guadeloupe2', 'Antilles', 1800);
-
---Insert test pour voir si on prend une station en dehors des zones données. Ne dois donc pas fonctionner.
-
-INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
-Values ('Tokyo', 600, 'Tokyo', 'Japon', 2700);
 
 INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
 Values ('Farniente', 200, 'Seychelles', 'Ocean Indien', 1500);
@@ -24,6 +21,11 @@ Values ('Santalba', 150, 'Martinique', 'Antilles', 2000);
 
 INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
 Values ('Passac', 400, 'Alpes', 'Europe', 1000);
+
+--Insert test pour voir si on prend une station en dehors des zones données. Ne dois donc pas fonctionner dans la base de données SQL. 
+
+INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
+Values ('Tokyo', 600, 'Tokyo', 'Japon', 2700);
 
 --Insert des activités
 
