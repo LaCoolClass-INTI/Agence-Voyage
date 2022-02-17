@@ -1,4 +1,4 @@
---Insert des stations :   
+--Insert des stations :  
 
 INSERT INTO STATION (NomStation, Capacite, lieu, region, tarif)
 Values ('Venusa', 350, 'Guadeloupe', 'Antilles', 1200);
