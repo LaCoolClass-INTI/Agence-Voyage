@@ -18,12 +18,14 @@ Malheureusement la base de données est vide, il faut alors trouver le moyen d�
 
 Fort de ces données, nous nous attaquons à la visualisation de ces données. Pour enfin, apprendre à modifier ses données.
 
-Bonne lecture de nos scripts :
+Bonne lecture de nos scripts.
 
 ## Logiciels :
 
-SQL serveur  
+SQL serveur
+
 Git
+
 Cmder
 
 
