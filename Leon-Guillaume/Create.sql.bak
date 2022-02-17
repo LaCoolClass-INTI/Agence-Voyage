@@ -1,4 +1,4 @@
--- Ajout des tableau Station, Activite, Client, Sejour.  
+-- Ajout des tableau Station, Activite, Client, Sejour. 
 
 Create table STATION (nomStation varchar(20), 
 						capacite int not null, 
