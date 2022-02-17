@@ -14,6 +14,7 @@ Que cela ne tienne, nous allons créer notre propre agence de voyage, enfin, sur
 - ses stations (nomStation, capacité, lieu, région, tarif)
 - ses activités (nomStation, libellé, prix)
 - ses séjours  (id, station, début, nbPlaces)
+
 Malheureusement la base de données est vide, il faut alors trouver le moyen d’ajouter des destinations intéressantes…
 
 Fort de ces données, nous nous attaquons à la visualisation de ces données. Pour enfin, apprendre à modifier ses données.
