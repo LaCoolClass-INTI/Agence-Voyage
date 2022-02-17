@@ -90,9 +90,36 @@ FROM Station;
 ----Une vue Tarifs (Station, Tarif, OptionMin, OptionMax) donnant, pour chaque station, le tarif et les prix min et max des activités.
 CREATE VIEW Tarfis (station, tarif, optionMin, optionMAx) AS 
 SELECT nomStation, tarif, (SELECT min(prix) FROM Activite) AS OptionMin, (SELECT max(prix) FROM Activite) AS OptionMax
-FROM Station
-INNER JOIN Activite
-ON 
-WITH CHECK OPTION;
+FROM Station;
 
-SELECT nomStation, tarif
+----- Inserer des parametres
+INSERT INTO Station (nomStation, capacite, lieu, region, tarif)
+VALUES ('Vatican' , 100 , 'Italie' , 'Europe' , 3000);
+
+INSERT INTO Activite
+VALUES ('Vatican' , 'Restau' , 400 );
+
+SELECT * FROM Activite
+SELECT * FROM Tarfis
+
+-----Insérez une activité 'Kayac' pour la station 'Venusa' dans ActivitesCheres et ActiviteModiques
+
+INSERT INTO Activite
+VALUES ('Venusa' , 'Kayak' , 200 );
+INSERT INTO Activite
+VALUES ('Venusa' , 'Kayak1' , 90 );
+
+SELECT * FROM ActivitesCheres
+SELECT * FROM ActivitesModiques
+
+---- oui car ça permet de ne peut pas mettre 2 prix pour une même activité
+
+---Oui on peut insérer dans la SastionEuro à condition d'insérer une ligne dans Station
+INSERT INTO Station (nomStation, capacite, lieu, region, tarif)
+VALUES ('Catarata' , 100 , 'Argentine' , 'Ameriques' , 5000);
+SELECT * FROM StationEuro1
+
+----Détruisez une ligne de StationEuro.
+DELETE FROM Station WHERE nomStation ='Catarata' 
+SELECT * FROM StationEuro1
+
