@@ -43,3 +43,10 @@ $ git checkout 'nombranch'
 $ git fetch   
   
 $ git branch -a
+
+
+## License
+
+MIT
+
+**Free Software**
