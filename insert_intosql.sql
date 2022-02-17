@@ -1,0 +1,7 @@
+--insert into STATION values ('Venusa',350,'Guadeloupe','Antilles',1200);
+--insert into ACTIVITE values('Venusa','Voile',150);
+--insert into ACTIVITE values('Venusa','Plongée',120);
+--insert into CLIENT values(10,'Fogg','Phileas','Londres','Europe',12465);
+--insert into CLIENT values(20,'Pascal','Blaise','Paris','Europe',6763);
+--insert into CLIENT values(30,'Kerouac','Jack','New York','Ameriques',9812);
+--insert into SEJOUR values(20,'Venusa','1998-09-03',4);
