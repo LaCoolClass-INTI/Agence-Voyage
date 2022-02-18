@@ -21,7 +21,7 @@ Fort de ces données, nous nous attaquons à la visualisation de ces données. P
 
 Bonne lecture de nos scripts.
 
-Notre cher Tao étant malade, nous devons trouver en urgence un médecin, nous créons donc une base de donnée avec la liste des médecins sur paris.
+Notre cher Tao étant malade, nous devons trouver en urgence un médecin, nous créons donc une base de donnée avec la liste des médecins sur paris. (Script Medecin)
 
 ## Logiciels :
 
